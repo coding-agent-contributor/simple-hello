@@ -3,7 +3,7 @@
 
 int main()
 {
-    char name[64];
+    char name[128];
 
     printf("Enter your name:\n");
     fgets(name, sizeof(name), stdin);
