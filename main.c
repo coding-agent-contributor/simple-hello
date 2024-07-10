@@ -3,10 +3,10 @@
 
 int main()
 {
-    char name[8];
+    char name[128];
 
     printf("Enter your name:\n");
-    fgets(name, 128, stdin);
+    fgets(name, sizeof(name), stdin);
 
     // Remove the trailing newline character if present
     name[strcspn(name, "\n")] = '\0';
